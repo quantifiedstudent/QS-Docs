@@ -1,11 +1,9 @@
 This contains whole documentation for the sub-projects of the Quantified student.
 Documentation is grouped in folders:
 
- 1. Application Architecture - documentation containing information about Structure of Application
- 2. Dashboard - documentation containing usefull information solely about Dashboard
- 3. Legacy docs - documentation for finished or outdated sub-project 
- 4. Mobile application - documentation containing usefull information solely about Mobile Application
- 5. Research - documentation containing information about what research was done and the results of that research
+ 1. **Application Architecture** - documentation containing information about Structure of Application
+ 2. **Legacy docs** - documentation for finished or outdated sub-project 
+ 3. **Research** - documentation containing information about what research was done and the results of that research
 
 In addition it contains files:
 
