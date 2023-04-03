@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>Space for diagram notes</help_text>
+  <zoom_level>2</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>436</x>
+      <y>432</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Student
+--
++id: int
++name: string
++created_at: string
++sortable_name: string
++short_name: string
++sis_user_id: string
++integration_id: string
++login_id: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>374</x>
+      <y>432</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Grade
+--
++current_grade: string
++current_score: int
++final_grade: string
++final_score: float
++unposted_current_score: int
++unposted_current_grade: string
++unposted_final_score: float
++unposted_final_grade: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>488</x>
+      <y>430</y>
+      <w>42</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>Submission
+--
++id: int
++grade: string
++score: string
++submitted_at: string
++assignment_id: int
++user_id: int
++submission_type: string
++workflow_state: string
++grade_matches_current_submission: Boolean
++graded_at: string
++grader_id: string
++attempt: string
++excused: string
++late_policy_status: string
++points_deducted: string
++grading_period_id: string
++extra_attempts: string
++posted_at: string
++redo_request: Boolean
++late: Boolean
++missing: Boolean
++seconds_late: int
++entered_grade: string
++entered_score: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>542</x>
+      <y>430</y>
+      <w>42</w>
+      <h>46</h>
+    </coordinates>
+    <panel_attributes>Outcome
+--
++id: int
++mastery: bool
++score: int
++possible: int
++percent: int
++hide_points: bool
++hidden: bool
++submitted_or_assessed_at: string
++links: links
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>158</x>
+      <y>222</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandStudentHandler
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>344</x>
+      <y>392</y>
+      <w>342</w>
+      <h>318</h>
+    </coordinates>
+    <panel_attributes>Domain Layer
+--
+bg=#a6f1a6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>364</x>
+      <y>412</y>
+      <w>292</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Models
+--
+bg=#a6f1a6
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>142</x>
+      <y>200</y>
+      <w>308</w>
+      <h>164</h>
+    </coordinates>
+    <panel_attributes>Application Layer
+--
+bg=#FF7F7F
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>150</x>
+      <y>212</y>
+      <w>280</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Command Handlers
+--
+bg=#FF7F7F</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>228</x>
+      <y>732</y>
+      <w>248</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Infrastructure Layer
+--
+bg=#99cfe0
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>236</x>
+      <y>746</y>
+      <w>234</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>API Recivers Services
+--
+bg=#99cfe0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>404</x>
+      <y>760</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>OutcomeAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>228</x>
+      <y>222</y>
+      <w>50</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandGradeHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>364</x>
+      <y>530</y>
+      <w>294</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Interfaces
+--
+bg=#a6f1a6
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>548</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IOutcomeAPIReciverService/
+--
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>342</x>
+      <y>760</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>SubmissionAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>760</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>GradeAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>760</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>StudentAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>506</x>
+      <y>548</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/ISubmissionAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>574</x>
+      <y>548</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IGradeAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>548</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IStudentAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>370</x>
+      <y>538</y>
+      <w>274</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>IAPI Recivers Services
+--
+bg=#a6f1a6
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>292</x>
+      <y>222</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandSubbmisionHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>358</x>
+      <y>222</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandOutcomeHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>616</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IOutcomeHandler/
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>506</x>
+      <y>616</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/ISubbmisionHandler/
+--
+
+
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>382</x>
+      <y>616</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IStudentHandler/
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>616</y>
+      <w>50</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IGradeHandler/
+--
+
+
+
+layer=4
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>374</x>
+      <y>606</y>
+      <w>274</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>IDomainEventsHandlers
+--
+bg=#a6f1a6
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>150</x>
+      <y>288</y>
+      <w>280</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>DomainEventsHandlers
+--
+bg=#FF7F7F</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>164</x>
+      <y>302</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>StudentHandler
+--
+
+--
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>302</y>
+      <w>50</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>GradeHandler
+--
+
+--
+
+layer=4
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>288</x>
+      <y>302</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>SubbmisionHandler
+--
+
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>352</x>
+      <y>302</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>OutcomeHandler
+--
+
+--
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>352</x>
+      <y>858</y>
+      <w>52</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Canvas API
+_umletcode=
+//cloud
+
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
+
+//Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(60,70,50,50,30,130,true, cloudConfig)
+drawArc(36,83,49,50,70,100,true, cloudConfig)
+drawArc(73,83,50,30,-100,180,true, cloudConfig)
+drawArc(36,84,60,40,180,180,true, cloudConfig)
+var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
+drawArc(45,87,40,30,170,180,true, innerCloudConfig)
+drawArc(75,79,20,20,30,130,true, innerCloudConfig)
+
+//server
+//Parameters (x, y, width, height, radius, drawConfig?)
+drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
+
+//Parameters (x, y, width, height, drawConfig?)
+drawRectangle(150,60,40,8)
+drawRectangle(150,80,40,8)
+drawRectangle(150,100,40,8)
+
+//Parameters (x, y, radius, drawConfig?)
+drawCircle(170,125,5)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1038</x>
+      <y>666</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>OutcomeAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>658</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>SubmissionAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>672</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>GradeAPIReciverService
+--
+
+--
+layer=1
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>672</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>StudentAPIReciverService
+--
+
+--
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1036</x>
+      <y>436</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IOutcomeHandler/
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1186</x>
+      <y>430</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/ISubbmisionHandler/
+--
+
+
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>898</x>
+      <y>452</y>
+      <w>50</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IGradeHandler/
+--
+
+
+
+layer=4
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>772</x>
+      <y>462</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IStudentHandler/
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1036</x>
+      <y>594</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IOutcomeAPIReciverService/
+--
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>772</x>
+      <y>600</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IStudentAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>586</y>
+      <w>54</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/ISubmissionAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>600</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IGradeAPIReciverService/
+--
+
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1268</x>
+      <y>546</y>
+      <w>42</w>
+      <h>86</h>
+    </coordinates>
+    <panel_attributes>Submission
+--
++id: int
++grade: string
++score: string
++submitted_at: string
++assignment_id: int
++user_id: int
++submission_type: string
++workflow_state: string
++grade_matches_current_submission: Boolean
++graded_at: string
++grader_id: string
++attempt: string
++excused: string
++late_policy_status: string
++points_deducted: string
++grading_period_id: string
++extra_attempts: string
++posted_at: string
++redo_request: Boolean
++late: Boolean
++missing: Boolean
++seconds_late: int
++entered_grade: string
++entered_score: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>600</y>
+      <w>42</w>
+      <h>46</h>
+    </coordinates>
+    <panel_attributes>Outcome
+--
++id: int
++mastery: bool
++score: int
++possible: int
++percent: int
++hide_points: bool
++hidden: bool
++submitted_or_assessed_at: string
++links: links
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>834</x>
+      <y>602</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Student
+--
++id: int
++name: string
++created_at: string
++sortable_name: string
++short_name: string
++sis_user_id: string
++integration_id: string
++login_id: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>604</y>
+      <w>42</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Grade
+--
++current_grade: string
++current_score: int
++final_grade: string
++final_score: float
++unposted_current_score: int
++unposted_current_grade: string
++unposted_final_score: float
++unposted_final_grade: string
+--
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1034</x>
+      <y>510</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>OutcomeHandler
+--
+
+--
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1186</x>
+      <y>502</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>SubbmisionHandler
+--
+
+--
+
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>526</y>
+      <w>48</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GradeHandler
+--
+
+--
+
+layer=4
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>528</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>StudentHandler
+--
+
+--
+
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>772</x>
+      <y>400</y>
+      <w>58</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandStudentHandler
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>368</y>
+      <w>50</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandGradeHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>898</x>
+      <y>390</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandSubbmisionHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1034</x>
+      <y>374</y>
+      <w>56</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>CommandOutcomeHandler
+--
+
+--
+
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>566</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>638</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>640</y>
+      <w>52</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>240.0;10.0;240.0;270.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>826</x>
+      <y>544</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>150.0;290.0;150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>438</y>
+      <w>6</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>796</x>
+      <y>500</y>
+      <w>6</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>918</x>
+      <y>638</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>642</y>
+      <w>52</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>240.0;10.0;240.0;270.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>946</x>
+      <y>546</y>
+      <w>36</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>160.0;290.0;160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>916</x>
+      <y>554</y>
+      <w>6</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>918</x>
+      <y>490</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>918</x>
+      <y>428</y>
+      <w>6</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1090</x>
+      <y>644</y>
+      <w>52</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>240.0;10.0;240.0;270.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1060</x>
+      <y>632</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1058</x>
+      <y>548</y>
+      <w>6</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1060</x>
+      <y>474</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1058</x>
+      <y>412</y>
+      <w>6</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>540</y>
+      <w>50</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>230.0;290.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1210</x>
+      <y>624</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1210</x>
+      <y>540</y>
+      <w>6</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1240</x>
+      <y>512</y>
+      <w>50</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>230.0;170.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1240</x>
+      <y>630</y>
+      <w>50</w>
+      <h>58</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>230.0;10.0;230.0;270.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1212</x>
+      <y>468</y>
+      <w>6</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1210</x>
+      <y>406</y>
+      <w>6</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>198</x>
+      <y>94</y>
+      <w>210</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Analysis microservice</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>826</y>
+      <w>6</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>708</y>
+      <w>44</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>362</y>
+      <w>46</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>210.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>362</y>
+      <w>8</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;1850.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>318</x>
+      <y>144</y>
+      <w>6</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;300.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>888</x>
+      <y>238</y>
+      <w>210</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Analysis microservice</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>802</x>
+      <y>288</y>
+      <w>174</w>
+      <h>116</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;560.0;850.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>926</x>
+      <y>288</y>
+      <w>50</w>
+      <h>106</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;510.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>288</y>
+      <w>96</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>460.0;430.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>288</y>
+      <w>244</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>1200.0;400.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>954</x>
+      <y>832</y>
+      <w>52</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Canvas API
+_umletcode=
+//cloud
+
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
+
+//Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(60,70,50,50,30,130,true, cloudConfig)
+drawArc(36,83,49,50,70,100,true, cloudConfig)
+drawArc(73,83,50,30,-100,180,true, cloudConfig)
+drawArc(36,84,60,40,180,180,true, cloudConfig)
+var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
+drawArc(45,87,40,30,170,180,true, innerCloudConfig)
+drawArc(75,79,20,20,30,130,true, innerCloudConfig)
+
+//server
+//Parameters (x, y, width, height, radius, drawConfig?)
+drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
+
+//Parameters (x, y, width, height, drawConfig?)
+drawRectangle(150,60,40,8)
+drawRectangle(150,80,40,8)
+drawRectangle(150,100,40,8)
+
+//Parameters (x, y, radius, drawConfig?)
+drawCircle(170,125,5)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>710</y>
+      <w>190</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>930.0;610.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>710</y>
+      <w>62</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>290.0;610.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>976</x>
+      <y>704</y>
+      <w>90</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;640.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>696</y>
+      <w>238</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;680.0;1170.0;10.0</additional_attributes>
+  </element>
+</diagram>
