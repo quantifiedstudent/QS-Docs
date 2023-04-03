@@ -1,0 +1,205 @@
+<diagram program="umletino" version="15.1"><zoom_level>4</zoom_level><element><id>UMLClass</id><coordinates><x>704</x><y>700</y><w>84</w><h>80</h></coordinates><panel_attributes>Week
+--
++weather: string
++dateStart: date
++dateEnd: date
+--
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>700</y><w>84</w><h>80</h></coordinates><panel_attributes>Day
+--
++weather: string
++date: date
+--
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>348</y><w>116</w><h>80</h></coordinates><panel_attributes>CommandStudentHandler
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>520</x><y>640</y><w>388</w><h>528</h></coordinates><panel_attributes>Domain Layer
+--
+bg=#a6f1a6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>560</x><y>672</y><w>300</w><h>144</h></coordinates><panel_attributes>Models
+--
+bg=#a6f1a6
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>32</x><y>304</y><w>324</w><h>328</h></coordinates><panel_attributes>Application Layer
+--
+bg=#FF7F7F
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>48</x><y>328</y><w>292</w><h>132</h></coordinates><panel_attributes>Command Handlers
+--
+bg=#FF7F7F</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>112</x><y>1148</y><w>264</w><h>192</h></coordinates><panel_attributes>Infrastructure Layer
+--
+bg=#99cfe0
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>128</x><y>1176</y><w>224</w><h>132</h></coordinates><panel_attributes>API Recivers Services
+--
+bg=#99cfe0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>204</x><y>348</y><w>100</w><h>80</h></coordinates><panel_attributes>CommandGradeHandler
+--
+
+--
+
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>560</x><y>840</y><w>300</w><h>292</h></coordinates><panel_attributes>Interfaces
+--
+bg=#a6f1a6
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>876</y><w>108</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IDayAPIReciverService/
+--
+
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>236</x><y>1204</y><w>84</w><h>80</h></coordinates><panel_attributes>WeekAPIReciverService
+--
+
+--
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>136</x><y>1204</y><w>84</w><h>80</h></coordinates><panel_attributes>DayAPIReciverService
+--
+
+--
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>732</x><y>876</y><w>84</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IWeekAPIReciverService/
+--
+
+
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>572</x><y>856</y><w>268</w><h>120</h></coordinates><panel_attributes>IAPI Recivers Services
+--
+bg=#a6f1a6
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>596</x><y>1012</y><w>116</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IDayHandler/
+--
+
+
+layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>728</x><y>1012</y><w>100</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IWeekHandler/
+--
+
+
+
+layer=4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>572</x><y>996</y><w>268</w><h>108</h></coordinates><panel_attributes>IDomainEventsHandlers
+--
+bg=#a6f1a6
+layer=3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>48</x><y>480</y><w>292</w><h>132</h></coordinates><panel_attributes>DomainEventsHandlers
+--
+bg=#FF7F7F</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>76</x><y>508</y><w>116</w><h>80</h></coordinates><panel_attributes>StudentHandler
+--
+
+--
+
+layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>508</y><w>100</w><h>80</h></coordinates><panel_attributes>GradeHandler
+--
+
+--
+
+layer=4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>1412</y><w>104</w><h>80</h></coordinates><panel_attributes>Weather API
+_umletcode=
+//cloud
+
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
+
+//Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(60,70,50,50,30,130,true, cloudConfig)
+drawArc(36,83,49,50,70,100,true, cloudConfig)
+drawArc(73,83,50,30,-100,180,true, cloudConfig)
+drawArc(36,84,60,40,180,180,true, cloudConfig)
+var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
+drawArc(45,87,40,30,170,180,true, innerCloudConfig)
+drawArc(75,79,20,20,30,130,true, innerCloudConfig)
+
+//server
+//Parameters (x, y, width, height, radius, drawConfig?)
+drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
+
+//Parameters (x, y, width, height, drawConfig?)
+drawRectangle(150,60,40,8)
+drawRectangle(150,80,40,8)
+drawRectangle(150,100,40,8)
+
+//Parameters (x, y, radius, drawConfig?)
+drawCircle(170,125,5)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1700</x><y>1132</y><w>84</w><h>80</h></coordinates><panel_attributes>WeekAPIReciverService
+--
+
+--
+layer=1
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1436</x><y>1108</y><w>84</w><h>80</h></coordinates><panel_attributes>DayAPIReciverService
+--
+
+--
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1696</x><y>692</y><w>100</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IWeekHandler/
+--
+
+
+
+layer=4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1444</x><y>688</y><w>116</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IDayHandler/
+--
+
+
+layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1444</x><y>964</y><w>84</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IDayAPIReciverService/
+--
+
+
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1700</x><y>988</y><w>84</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
+/IWeekAPIReciverService/
+--
+
+
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1700</x><y>840</y><w>96</w><h>60</h></coordinates><panel_attributes>WeekHandler
+--
+
+--
+
+layer=4
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1440</x><y>820</y><w>116</w><h>80</h></coordinates><panel_attributes>DayHandler
+--
+
+--
+
+layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1444</x><y>564</y><w>116</w><h>80</h></coordinates><panel_attributes>CommandDayHandler
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1696</x><y>568</y><w>112</w><h>80</h></coordinates><panel_attributes>CommandWeekHandler
+--
+
+--
+
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1484</x><y>896</y><w>12</w><h>76</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>1040</y><w>12</w><h>76</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1516</x><y>1044</y><w>104</w><h>116</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>1552</x><y>852</y><w>68</w><h>124</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;290;150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1500</x><y>640</y><w>12</w><h>56</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1492</x><y>764</y><w>12</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>1736</x><y>1064</y><w>12</w><h>76</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1780</x><y>1072</y><w>104</w><h>116</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>1792</x><y>880</y><w>72</w><h>124</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;290;160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1732</x><y>896</y><w>12</w><h>100</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1736</x><y>768</y><w>12</w><h>76</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1736</x><y>644</y><w>12</w><h>56</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>0</x><y>0</y><w>420</w><h>104</h></coordinates><panel_attributes>Analysis microservice</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>244</x><y>1336</y><w>12</w><h>84</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>924</y><w>248</w><h>240</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>600;10;10;580</additional_attributes></element><element><id>Relation</id><coordinates><x>352</x><y>472</y><w>268</w><h>176</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>650;420;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>628</y><w>16</w><h>536</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;1320;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>100</y><w>12</w><h>220</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;530;10;10</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>1444</x><y>288</y><w>420</w><h>104</h></coordinates><panel_attributes>Analysis microservice</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1504</x><y>388</y><w>116</w><h>184</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;440;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1608</x><y>388</y><w>156</w><h>188</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>370;450;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1584</x><y>1312</y><w>104</w><h>80</h></coordinates><panel_attributes>Weather API
+_umletcode=
+//cloud
+
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
+
+//Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(60,70,50,50,30,130,true, cloudConfig)
+drawArc(36,83,49,50,70,100,true, cloudConfig)
+drawArc(73,83,50,30,-100,180,true, cloudConfig)
+drawArc(36,84,60,40,180,180,true, cloudConfig)
+var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
+drawArc(45,87,40,30,170,180,true, innerCloudConfig)
+drawArc(75,79,20,20,30,130,true, innerCloudConfig)
+
+//server
+//Parameters (x, y, width, height, radius, drawConfig?)
+drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
+
+//Parameters (x, y, width, height, drawConfig?)
+drawRectangle(150,60,40,8)
+drawRectangle(150,80,40,8)
+drawRectangle(150,100,40,8)
+
+//Parameters (x, y, radius, drawConfig?)
+drawCircle(170,125,5)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1480</x><y>1184</y><w>156</w><h>136</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>370;320;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1628</x><y>1208</y><w>124</w><h>112</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;260;290;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1824</x><y>996</y><w>84</w><h>80</h></coordinates><panel_attributes>Week
+--
++weather: string
++dateStart: date
++dateEnd: date
+--
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1572</x><y>968</y><w>84</w><h>80</h></coordinates><panel_attributes>Day
+--
++weather: string
++date: date
+--
+layer=2</panel_attributes><additional_attributes></additional_attributes></element></diagram>
