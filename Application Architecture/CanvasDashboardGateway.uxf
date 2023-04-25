@@ -12,25 +12,20 @@ layer=2</panel_attributes><additional_attributes></additional_attributes></eleme
 bg=#a6f1a6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>666</x><y>954</y><w>672</w><h>342</h></coordinates><panel_attributes>Models
 --
 bg=#a6f1a6
-layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>0</x><y>318</y><w>654</w><h>492</h></coordinates><panel_attributes>Application Layer
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>90</x><y>318</y><w>342</w><h>492</h></coordinates><panel_attributes>Application Layer
 --
 bg=#FF7F7F
-layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>24</x><y>354</y><w>600</w><h>198</h></coordinates><panel_attributes>Command Handlers
+layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>114</x><y>354</y><w>294</w><h>198</h></coordinates><panel_attributes>Command Handlers
 --
 bg=#FF7F7F</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>240</x><y>1914</y><w>498</w><h>276</h></coordinates><panel_attributes>Infrastructure Layer
 --
 bg=#99cfe0
 layer=-1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>282</x><y>1956</y><w>408</w><h>192</h></coordinates><panel_attributes>API Recivers Services
 --
-bg=#99cfe0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>498</x><y>1998</y><w>162</w><h>120</h></coordinates><panel_attributes>WeatherDataAPIReciverService
+bg=#99cfe0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>498</x><y>1998</y><w>162</w><h>120</h></coordinates><panel_attributes>GraphCanvasSubmissionsAPIReciverService
 --
 
 --
-layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>444</x><y>396</y><w>150</w><h>120</h></coordinates><panel_attributes>CommandCustomGraph
---
-
---
-
 layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>666</x><y>1308</y><w>456</w><h>462</h></coordinates><panel_attributes>Interfaces
 --
 bg=#a6f1a6
@@ -38,7 +33,7 @@ layer=1</panel_attributes><additional_attributes></additional_attributes></eleme
 /ICanvasDataAPIReciverService/
 --
 
-layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>1998</y><w>162</w><h>120</h></coordinates><panel_attributes>CanvasDataAPIReciverService
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>1998</y><w>162</w><h>120</h></coordinates><panel_attributes>GraphCanvasSubmissionsAPIReciverService
 --
 
 --
@@ -51,63 +46,12 @@ layer=2</panel_attributes><additional_attributes></additional_attributes></eleme
 --
 bg=#a6f1a6
 layer=1
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>1566</y><w>174</w><h>120</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
-/ICanvasDataHandler/
---
-
-
-layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>918</x><y>1566</y><w>150</w><h>120</h></coordinates><panel_attributes>/&lt;&lt;Interface&gt;&gt;/
-/IWeatherDataHandler/
---
-
-
-
-layer=4
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>684</x><y>1530</y><w>414</w><h>186</h></coordinates><panel_attributes>IDomainEventsHandlers
 --
 bg=#a6f1a6
-layer=3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>24</x><y>582</y><w>600</w><h>198</h></coordinates><panel_attributes>DomainEventsHandlers
+layer=3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>114</x><y>582</y><w>294</w><h>198</h></coordinates><panel_attributes>DomainEventsHandlers
 --
-bg=#FF7F7F</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>624</y><w>174</w><h>120</h></coordinates><panel_attributes>CanvasDataHandler
---
-
---
-
-layer=4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>624</y><w>150</w><h>120</h></coordinates><panel_attributes>WeatherDataHandler
---
-
---
-
-layer=4
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>564</x><y>2298</y><w>156</w><h>120</h></coordinates><panel_attributes>Canvas Data Microservice
-_umletcode=
-//cloud
-
-//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
-var cloudConfig = {fg: '#00BFFF', lt: '-', lw: 2}
-
-//Parameters (x, y, width, height, start, extent, open, drawConfig?)
-drawArc(60,70,50,50,30,130,true, cloudConfig)
-drawArc(36,83,49,50,70,100,true, cloudConfig)
-drawArc(73,83,50,30,-100,180,true, cloudConfig)
-drawArc(36,84,60,40,180,180,true, cloudConfig)
-var innerCloudConfig= {fg: '#87CEFA', lt: '-', lw: 2}
-drawArc(45,87,40,30,170,180,true, innerCloudConfig)
-drawArc(75,79,20,20,30,130,true, innerCloudConfig)
-
-//server
-//Parameters (x, y, width, height, radius, drawConfig?)
-drawRectangleRound(140,50,60,90,5, {bg: 'gray', fg: 'black', lt: '-', lw: 2})
-
-//Parameters (x, y, width, height, drawConfig?)
-drawRectangle(150,60,40,8)
-drawRectangle(150,80,40,8)
-drawRectangle(150,100,40,8)
-
-//Parameters (x, y, radius, drawConfig?)
-drawCircle(170,125,5)
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2544</x><y>1734</y><w>126</w><h>120</h></coordinates><panel_attributes>CanvasDataAPIReciverService
+bg=#FF7F7F</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2544</x><y>1734</y><w>126</w><h>120</h></coordinates><panel_attributes>CanvasDataAPIReciverService
 --
 
 --
@@ -192,7 +136,7 @@ layer=4</panel_attributes><additional_attributes></additional_attributes></eleme
 
 --
 
-layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2244</x><y>1392</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2238</x><y>1608</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2292</x><y>1614</y><w>156</w><h>174</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>2346</x><y>1326</y><w>102</w><h>186</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;290;150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2268</x><y>1002</y><w>318</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;130;510;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2256</x><y>1194</y><w>18</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1632</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2664</x><y>1644</y><w>156</w><h>174</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>2682</x><y>1356</y><w>108</w><h>186</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;290;160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2592</x><y>1380</y><w>18</w><h>150</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1188</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1002</y><w>18</w><h>84</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3162</x><y>1302</y><w>174</w><h>114</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>270;170;270;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3144</x><y>1656</y><w>192</w><h>132</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>300;10;300;200;10;200</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>0</x><y>0</y><w>630</w><h>156</h></coordinates><panel_attributes>Canvas Dashboard Gateway</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>2184</y><w>18</w><h>126</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>642</x><y>1800</y><w>186</w><h>138</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>290;10;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>618</y><w>108</w><h>306</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;490;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>804</y><w>24</w><h>1122</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;1850;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>150</y><w>108</w><h>192</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;300;160;10</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>2376</x><y>462</y><w>630</w><h>156</h></coordinates><panel_attributes>Canvas Dashboard Gateway</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2622</x><y>612</y><w>18</w><h>288</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;460;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2952</x><y>612</y><w>156</w><h>270</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>240;430;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2538</x><y>2202</y><w>156</w><h>120</h></coordinates><panel_attributes>Canvas API
+layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2244</x><y>1392</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2238</x><y>1608</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2292</x><y>1614</y><w>156</w><h>174</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>2346</x><y>1326</y><w>102</w><h>186</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;290;150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2268</x><y>1002</y><w>318</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;130;510;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2256</x><y>1194</y><w>18</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1632</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2664</x><y>1644</y><w>156</w><h>174</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;270;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>2682</x><y>1356</y><w>108</w><h>186</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;290;160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2592</x><y>1380</y><w>18</w><h>150</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;230;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1188</y><w>18</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>2598</x><y>1002</y><w>18</w><h>84</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3162</x><y>1302</y><w>174</w><h>114</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>270;170;270;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3144</x><y>1656</y><w>192</w><h>132</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>300;10;300;200;10;200</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>0</x><y>0</y><w>630</w><h>156</h></coordinates><panel_attributes>Canvas LTI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>642</x><y>1800</y><w>186</w><h>138</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>290;10;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>426</x><y>618</y><w>330</w><h>306</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>530;490;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>804</y><w>30</w><h>1122</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;1850;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>150</y><w>18</w><h>192</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;300;10;10</additional_attributes></element><element><id>UMLDeployment</id><coordinates><x>2376</x><y>462</y><w>630</w><h>156</h></coordinates><panel_attributes>Canvas LTI</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2622</x><y>612</y><w>18</w><h>288</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;460;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2952</x><y>612</y><w>156</w><h>270</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>240;430;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2538</x><y>2202</y><w>156</w><h>120</h></coordinates><panel_attributes>Analysis microservice
 _umletcode=
 //cloud
 
@@ -220,7 +164,7 @@ drawRectangle(150,100,40,8)
 //Parameters (x, y, radius, drawConfig?)
 drawCircle(170,125,5)
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2238</x><y>1824</y><w>378</w><h>390</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>610;630;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2604</x><y>1848</y><w>18</w><h>366</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;590;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2610</x><y>1830</y><w>492</w><h>384</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;620;800;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>306</x><y>2298</y><w>156</w><h>120</h></coordinates><panel_attributes>Weather Data Microservice
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2238</x><y>1824</y><w>378</w><h>390</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>610;630;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2604</x><y>1848</y><w>18</w><h>366</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;590;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2610</x><y>1830</y><w>492</w><h>384</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;620;800;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>306</x><y>2298</y><w>156</w><h>120</h></coordinates><panel_attributes>Analysis microservice
 _umletcode=
 //cloud
 
@@ -248,7 +192,7 @@ drawRectangle(150,100,40,8)
 //Parameters (x, y, radius, drawConfig?)
 drawCircle(170,125,5)
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>2184</y><w>18</w><h>126</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>54</x><y>396</y><w>150</w><h>120</h></coordinates><panel_attributes>CommandGraphCanvasWeather
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>2184</y><w>18</w><h>126</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>396</y><w>150</w><h>120</h></coordinates><panel_attributes>CommandGetGraphs
 --
 
 --
@@ -300,17 +244,12 @@ layer=2</panel_attributes><additional_attributes></additional_attributes></eleme
 +entered_grade: string
 +entered_score: string
 --
-layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>246</x><y>396</y><w>150</w><h>120</h></coordinates><panel_attributes>CommandGraphCanvasSubmissions
---
-
---
-
-layer=1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2376</x><y>1500</y><w>126</w><h>120</h></coordinates><panel_attributes>DailyWeather
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2376</x><y>1500</y><w>126</w><h>120</h></coordinates><panel_attributes>DailyWeather
 --
 +weather: string
 +date: date
 --
-layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2220</x><y>756</y><w>126</w><h>120</h></coordinates><panel_attributes>GraphCanvasSubmissions
+layer=2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2220</x><y>756</y><w>126</w><h>120</h></coordinates><panel_attributes>GraphCanvasWeather
 --
 -weather: DailyWeather[]
 -canvasData: Grade[]
