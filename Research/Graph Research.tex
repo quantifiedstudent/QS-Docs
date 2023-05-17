@@ -1,0 +1,231 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{color}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tabularray}
+\usepackage{xcolor,colortbl}
+\usepackage[top=2cm, bottom=2cm, left = 1.5cm, right = 1.5cm]{geometry} 
+\geometry{a4paper} 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{graphicx} 
+\usepackage{amsmath,amssymb}  
+\usepackage{bm}  
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref} 
+\hypersetup{linkcolor=MSBlue,citecolor=black,filecolor=black,urlcolor=black} % black links, for printed output
+\usepackage{memhfixc} 
+\usepackage{pdfsync}  
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+\definecolor{MSBlue}{RGB}{47, 84, 150}
+\renewcommand{\cftsecfont}{\fontfamily{qag}\selectfont\bfseries} 
+\renewcommand{\cftsecpagefont}{\fontfamily{qag}\selectfont\bfseries\color{MSBlue}} 
+\renewcommand{\cfttoctitlefont}{\fontfamily{qag}\selectfont\LARGE\bfseries}               % Blank space before title
+\renewcommand{\familydefault}{phv}
+
+
+
+\titleformat{\section}
+  {\fontfamily{qag}\selectfont\LARGE\bfseries\color{MSBlue}}
+  {\thesection}{0.5em}{}
+  
+  
+\titleformat{\subsection}
+  {\fontfamily{qag}\selectfont\Large\mdseries\color{MSBlue}}
+  {\thesubsection}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}}
+  {\thesubsubsection}{0.5em}{}
+
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\setlength{\parindent}{0pt}
+	\vspace*{.15\textheight}
+	\medbreak
+	{\fontfamily{qag}\Huge\bfseries\color{MSBlue} Graph Research\par}
+	\bigbreak
+    \bigbreak
+	{Michał Raczkowski\par}
+    \smallbreak
+    {\small OL S6\par}
+    \smallbreak
+    {\small 4465024\par}
+\end{titlepage}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+\section{Introduction}
+When it comes to visualizing data and creating interactive graphs and charts in JavaScript, several powerful frameworks and libraries are available. These frameworks offer developers a range of tools and functionalities to effectively represent data in a visually appealing and engaging manner. 
+Each framework has its strengths and caters to different development preferences and project requirements. By understanding their features, chart types, learning curves, customization options, and interactivity capabilities, we can make informed decisions on selecting the most suitable JavaScript framework for graph creation and data visualization.
+
+\section{Goal}
+Our primary objective is to select a framework that effectively and informatively presents students' data in the form of graphs on the dashboard of the Quantified Student project. In the following section, we outline the crucial requirements that the framework must meet to facilitate efficient and rapid development while meeting our specific needs.
+
+\section{Requiremnts}
+    \subsection{Simplicity}
+    Simplifying the framework ensures that developers can quickly grasp the concepts and start building graphs without getting bogged down by complex implementation details. This speeds up the development process and reduces the learning curve, allowing developers to be more productive.
+    \subsection{Automation}
+    By automating tasks like rendering, data manipulation, and interactivity, the framework reduces the amount of manual code that developers need to write. This saves time and effort, enabling faster development cycles and quicker iterations.
+    \subsection{Customization}
+    The ability to customize charts according to specific needs is important for creating visually appealing and tailored visualizations. This aspect assesses the flexibility and options available for customizing the appearance, interactivity, and behavior of the charts.
+    \subsection{Templates and Themes}
+    Pre-designed templates and themes provide ready-to-use graph layouts and styles. Developers can leverage these resources to quickly create visually appealing graphs without having to start from scratch. This accelerates development by eliminating the need to spend time designing and fine-tuning the graph's visual presentation.
+    \subsection{Efficient Data Handling}
+    Handling large datasets efficiently is crucial for performance and responsiveness. With optimized algorithms and data processing mechanisms, the framework can handle complex graph data quickly and effectively. This ensures that developers can work with large amounts of data without experiencing slowdowns or bottlenecks, leading to faster development and better user experiences.
+    \subsection{Responsive and Cross-Platform Support}
+    With the increasing variety of devices and screen sizes, the framework needs to adapt and display graphs correctly across different platforms. By providing responsive and cross-platform support, the framework enables developers to create graph visualizations that work seamlessly on desktops, tablets, and mobile devices. This saves time by eliminating the need for manual adjustments and ensures a consistent user experience across platforms.
+    \subsection{Performance}
+    A performant framework ensures that graphs render quickly and smoothly, even with complex data or real-time updates. Fast graph interactions contribute to a more efficient development workflow, as developers can iterate and test their graphs more rapidly without being hindered by slow rendering or laggy interactions.
+    \subsection{Comprehensive Documentation}
+    Comprehensive and well-organized documentation is essential for developers to understand and utilize the framework effectively. This aspect evaluates the quality and availability of documentation, including clear examples, tutorials, and API references.
+    \subsection{FOSS (Free and Open Source)}
+    The free and open-source aspect considers whether the framework is freely available and open-source, enabling community involvement, contributions, and customization without any licensing restrictions.
+    \medbreak
+    \subsection[short]{title}
+    
+    
+\section{Comparison}
+
+Among the various frameworks available for creating graphs and charts, we will attempt to select the most suitable one based on our requirements. These frameworks are highly sought-after in the field of data visualization.
+
+\subsection{Chart.js}
+Chart.js is a versatile and user-friendly framework that provides a wide range of chart types, including line charts, bar charts, pie charts, and more. It offers an intuitive API and easy configuration options, making it suitable for beginners and developers who prefer simplicity. Chart.js also provides interactive features like tooltips, animations, and responsiveness, allowing for engaging data visualizations.\par
+\medbreak
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Intuitive and user-friendly API for easy chart creation.
+  \item Supports various chart types, including line, bar, radar, pie, and more.
+  \item Built-in animation and responsive design for interactive and dynamic charts.
+  \item Easy customization options for colors, labels, tooltips, and scales.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Limited support for complex and advanced charting requirements.
+  \item Dependency on canvas for rendering, which may not be suitable for all projects.
+  \item Smaller ecosystem and community compared to other frameworks.
+\end{itemize}
+    
+\subsection{D3.js}
+D3.js (Data-Driven Documents) is a powerful and flexible library that focuses on data visualization using web standards like HTML, SVG, and CSS. It provides developers with complete control over the visualization process, allowing for highly customizable and intricate visualizations. D3.js excels in data manipulation, transformation, and low-level rendering, making it ideal for complex projects and advanced data visualization needs.\par
+\medbreak
+
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Complete control over the visualization process and data manipulation.
+  \item Powerful data-binding capabilities for creating dynamic and data-driven visualizations.
+  \item Low-level rendering for fine-grained customization of SVG elements.
+  \item Transitions and animations for smooth and visually appealing effects.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Steeper learning curve due to its low-level nature and complex API.
+  \item Requires more coding and configuration compared to other frameworks.
+  \item Not as beginner-friendly for simple charting needs.
+\end{itemize}
+
+\subsection{C3.js}
+C3.js is a charting library built on top of Chart.js, offering a higher-level API and simplifying the chart creation process. It retains the customization options and interactivity of Chart.js while providing additional features like built-in chart types, easy configuration, and responsiveness. C3.js is suitable for developers who prefer a more streamlined approach without sacrificing flexibility.\par
+\medbreak
+
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Simplified API and configuration compared to Chart.js.
+  \item Higher-level abstraction with built-in chart types, reducing development time.
+  \item Automatic generation of axes, scales, and gridlines for easier chart creation.
+  \item Responsive design with automatic resizing and adaptability to different devices.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Limited customization options compared to Chart.js.
+  \item Less flexibility for advanced charting requirements.
+  \item Smaller community and fewer plugins and extensions available.
+\end{itemize}
+
+\subsection{Plotly.js}
+Plotly.js is a comprehensive library for creating interactive and collaborative visualizations, including charts, graphs, and dashboards. It supports a wide range of chart types and provides advanced features like interactivity, zooming panning animations, and data exploration capabilities. Plotly.js also offers exporting options and can be integrated with other libraries and frameworks.\par
+\medbreak
+
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Wide range of interactive chart types, including 3D plots and maps.
+  \item Collaborative features for sharing and editing visualizations.
+  \item Advanced data exploration capabilities, including zooming and panning.
+  \item Exporting options for saving charts as images or interactive web pages.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Larger library size compared to other frameworks.
+  \item Limited customization options for finer control over chart appearance.
+  \item Some advanced features may require a paid license.
+\end{itemize}
+
+\subsection{Chartist.js}
+Chartist.js is a lightweight and responsive charting library focused on simplicity and performance. It offers customizable and responsive charts, support for multiple chart types, animations, advanced axis settings, tooltips, and events. Chartist.js is known for its ease of use and lightweight footprint, making it suitable for projects where simplicity and performance are prioritized.\par
+\medbreak
+
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Lightweight and fast rendering for optimal performance.
+  \item Customizable responsive behavior for charts that adapt to different screen sizes.
+  \item Advanced axis settings, including step size, offset, and label interpolation.
+  \item Event handling system for interactive chart interactions.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Limited chart types compared to other frameworks.
+  \item Less extensive feature set compared to larger charting libraries.
+  \item Smaller community and fewer resources available.
+\end{itemize}
+
+\subsection{Highcharts}
+Highcharts is a widely-used commercial charting library that offers an extensive set of features and chart types. It provides interactive elements, animations, exporting options, accessibility support, and advanced customization capabilities. Highcharts also offers comprehensive documentation and commercial support, making it suitable for professional projects with complex charting requirements.\par
+\medbreak
+
+
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main features:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Extensive range of chart types and customization options.
+  \item Rich set of interactive features, including zooming, panning, and tooltips.
+  \item Accessibility support for creating inclusive visualizations.
+  \item Exporting options for saving charts as images or PDFs.
+\end{itemize}\par
+
+\medbreak
+{\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}{ Main cons:}}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Highcharts is a commercial library and may require a paid license for commercial use.
+  \item Limited free version with fewer features compared to the paid version.
+  \item Relatively larger library size compared to some other frameworks.
+\end{itemize}
+
+
+
+
+\end{document}
