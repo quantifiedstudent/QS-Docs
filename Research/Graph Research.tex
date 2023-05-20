@@ -10,6 +10,7 @@
 \usepackage{textcomp}
 \usepackage{graphicx} 
 \usepackage{amsmath,amssymb}  
+\usepackage{subcaption}
 \usepackage{bm}  
 \usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref} 
 \hypersetup{linkcolor=MSBlue,citecolor=black,filecolor=black,urlcolor=black} % black links, for printed output
@@ -75,25 +76,44 @@ Our primary objective is to select a framework that effectively and informativel
 
 \section{Requiremnts}
     \subsection{Simplicity}
+    \textit{How easy is it to use and get started with the framework?}
+    \smallbreak
     Simplifying the framework ensures that developers can quickly grasp the concepts and start building graphs without getting bogged down by complex implementation details. This speeds up the development process and reduces the learning curve, allowing developers to be more productive.
     \subsection{Automation}
+    \textit{Does the framework provide automation features for simplifying chart creation?}
+    \smallbreak
+
     By automating tasks like rendering, data manipulation, and interactivity, the framework reduces the amount of manual code that developers need to write. This saves time and effort, enabling faster development cycles and quicker iterations.
     \subsection{Customization}
+    \textit{To what extent can charts be customized and tailored to specific needs?}
+    \smallbreak
     The ability to customize charts according to specific needs is important for creating visually appealing and tailored visualizations. This aspect assesses the flexibility and options available for customizing the appearance, interactivity, and behavior of the charts.
     \subsection{Templates and Themes}
+    \textit{Does the framework offer pre-designed templates and themes for quick styling?}
+    \smallbreak
     Pre-designed templates and themes provide ready-to-use graph layouts and styles. Developers can leverage these resources to quickly create visually appealing graphs without having to start from scratch. This accelerates development by eliminating the need to spend time designing and fine-tuning the graph's visual presentation.
     \subsection{Efficient Data Handling}
+    \textit{How well does the framework handle data manipulation and integration?}
+    \smallbreak
     Handling large datasets efficiently is crucial for performance and responsiveness. With optimized algorithms and data processing mechanisms, the framework can handle complex graph data quickly and effectively. This ensures that developers can work with large amounts of data without experiencing slowdowns or bottlenecks, leading to faster development and better user experiences.
     \subsection{Responsive and Cross-Platform Support}
+    \textit{Does the framework provide responsiveness for charts across different devices?}
+    \smallbreak
     With the increasing variety of devices and screen sizes, the framework needs to adapt and display graphs correctly across different platforms. By providing responsive and cross-platform support, the framework enables developers to create graph visualizations that work seamlessly on desktops, tablets, and mobile devices. This saves time by eliminating the need for manual adjustments and ensures a consistent user experience across platforms.
     \subsection{Performance}
+    \textit{How efficiently does the framework handle rendering and interactivity?}
+    \smallbreak
     A performant framework ensures that graphs render quickly and smoothly, even with complex data or real-time updates. Fast graph interactions contribute to a more efficient development workflow, as developers can iterate and test their graphs more rapidly without being hindered by slow rendering or laggy interactions.
     \subsection{Comprehensive Documentation}
+    \textit{Is the framework well-documented with clear examples and tutorials?}
+    \smallbreak
     Comprehensive and well-organized documentation is essential for developers to understand and utilize the framework effectively. This aspect evaluates the quality and availability of documentation, including clear examples, tutorials, and API references.
     \subsection{FOSS (Free and Open Source)}
+    \textit{Is the framework freely available and open source for community use?}
+    \smallbreak
     The free and open-source aspect considers whether the framework is freely available and open-source, enabling community involvement, contributions, and customization without any licensing restrictions.
     \medbreak
-    \subsection[short]{title}
+
     
     
 \section{Comparison}
@@ -225,6 +245,49 @@ Highcharts is a widely-used commercial charting library that offers an extensive
   \item Relatively larger library size compared to some other frameworks.
 \end{itemize}
 
+\definecolor{HitGray}{rgb}{0.678,0.709,0.741}
+\definecolor{PaleSky}{rgb}{0.423,0.458,0.49}
+\definecolor{ShipCove}{rgb}{0.509,0.596,0.752}
+\definecolor{PigeonPost}{rgb}{0.67,0.729,0.835}
+\begin{table}[H]
+\centering
+\captionsetup{labelformat=empty}
+\caption{Comaprison Table}
+\begin{tblr}{
+  width = \linewidth,
+  colspec = {Q[221]Q[113]Q[96]Q[96]Q[110]Q[144]Q[154]},
+  row{1} = {HitGray},
+  row{11} = {PigeonPost},
+  cell{2}{1} = {PaleSky,fg=white},
+  cell{3}{1} = {PaleSky,fg=white},
+  cell{4}{1} = {PaleSky,fg=white},
+  cell{5}{1} = {PaleSky,fg=white},
+  cell{6}{1} = {PaleSky,fg=white},
+  cell{7}{1} = {PaleSky,fg=white},
+  cell{8}{1} = {PaleSky,fg=white},
+  cell{9}{1} = {PaleSky,fg=white},
+  cell{10}{1} = {PaleSky,fg=white},
+  cell{11}{1} = {ShipCove},
+  hlines,
+  vlines,
+  hline{3-10} = {1}{white},
+}
+Framework             & Chart.js & D3.js  & C3.js  & Plotly.js & Chartist.js & Highcharts \\
+Simplicity            & 8        & 5      & 7      & 7         & 9           & 7          \\
+Automation            & 7        & 5      & 8      & 7         & 7           & 9          \\
+Customization         & 8        & 10     & 7      & 8         & 6           & 9          \\
+{Templates \\ Themes} & 7        & 6      & 7      & 7         & 6           & 9          \\
+Data Handling         & 8        & 10     & 7      & 9         & 7           & 9          \\
+Responsiveness        & 8        & 7      & 8      & 8         & 8           & 9          \\
+Performance           & 7        & 9      & 7      & 8         & 8           & 9          \\
+Documentation         & 8        & 9      & 7      & 8         & 7           & 9          \\
+{Free \\ Open Source} & Yes      & Yes    & Yes    & Yes       & Yes         & No         \\
+Overall Score         & 7.8/10   & 7.4/10 & 7.2/10 & 7.7/10    & 7.0/10      & 8.6/10        
+\end{tblr}
+\end{table}
+\section{Conclusion}
+
+Based on the evaluation of popular JavaScript graph frameworks, it can be concluded that Chart.js emerges as the best fit for our needs. Chart.js excels in various aspects, including simplicity, customization, data handling, responsiveness, and documentation. With its intuitive API, extensive chart type support, and easy customization options, Chart.js provides a user-friendly experience for developers. Moreover, it offers ample documentation and has a strong community support, ensuring that developers can find resources and assistance when needed. Additionally, being a free and open-source framework further adds to its appeal. While other frameworks such as D3.js and Plotly.js have their unique strengths, Chart.js strikes a balance between simplicity and flexibility, making it a solid choice for fast development and satisfying most charting requirements.
 
 
 
