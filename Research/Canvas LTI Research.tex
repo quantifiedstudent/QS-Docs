@@ -1,0 +1,78 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{color}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tabularray}
+\usepackage{xcolor,colortbl}
+\usepackage[top=2cm, bottom=2cm, left = 1.5cm, right = 1.5cm]{geometry} 
+\geometry{a4paper} 
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{textcomp}
+\usepackage{graphicx} 
+\usepackage{amsmath,amssymb}  
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{bm}  
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref} 
+\hypersetup{linkcolor=MSBlue,citecolor=black,filecolor=black,urlcolor=black} % black links, for printed output
+\usepackage{memhfixc} 
+\usepackage{pdfsync}  
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+\definecolor{MSBlue}{RGB}{47, 84, 150}
+\renewcommand{\cftsecfont}{\fontfamily{qag}\selectfont\bfseries} 
+\renewcommand{\cftsecpagefont}{\fontfamily{qag}\selectfont\bfseries\color{MSBlue}} 
+\renewcommand{\cfttoctitlefont}{\fontfamily{qag}\selectfont\LARGE\bfseries}               % Blank space before title
+\renewcommand{\familydefault}{phv}
+
+
+
+\titleformat{\section}
+  {\fontfamily{qag}\selectfont\LARGE\bfseries\color{MSBlue}}
+  {\thesection}{0.5em}{}
+  
+  
+\titleformat{\subsection}
+  {\fontfamily{qag}\selectfont\Large\mdseries\color{MSBlue}}
+  {\thesubsection}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\fontfamily{qag}\selectfont\large\mdseries\color{MSBlue}}
+  {\thesubsubsection}{0.5em}{}
+
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\begin{document}
+
+\begin{titlepage}
+	\setlength{\parindent}{0pt}
+	\vspace*{.15\textheight}
+	\medbreak
+	{\fontfamily{qag}\Huge\bfseries\color{MSBlue} Canvas LTI Research\par}
+	\bigbreak
+    \bigbreak
+	{Michał Raczkowski\par}
+    \smallbreak
+    {\small OL S6\par}
+    \smallbreak
+    {\small 4465024\par}
+\end{titlepage}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+\section{Introduction}
+Canvas LTI (Learning Tools Interoperability) transforms the integration of external tools and resources in educational institutions' learning management systems (LMS). With Canvas LTI, instructors and students effortlessly access a wide array of interactive content, multimedia resources, and educational tools directly within Canvas. By eliminating barriers between systems, LTI empowers educators to enhance courses with engaging content and streamline workflows. 
+
+
+
+\end{document}
