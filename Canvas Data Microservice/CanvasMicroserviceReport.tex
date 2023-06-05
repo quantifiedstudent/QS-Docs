@@ -32,7 +32,7 @@
 
 \fancypagestyle{titlepage}{
   \fancyhf{}
-  \rfoot{\fontfamily{qag}\fontsize{11pt}{0pt}\selectfont\color{MSGray} version 0.1v}
+  \rfoot{\fontfamily{qag}\fontsize{11pt}{0pt}\selectfont\color{MSGray} version 0.2v}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand\footrulewidth{0pt}
 }
@@ -43,7 +43,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\headheight}{15pt}
-\rhead{\fontfamily{qag}\fontsize{10pt}{12pt}\selectfont\color{MSGray} 04.06.23}
+\rhead{\fontfamily{qag}\fontsize{10pt}{12pt}\selectfont\color{MSGray} 05.06.23}
 \lhead[]{}
 \fancyfoot[C]{\fontsize{10pt}{10pt}\selectfont\thepage} 
 
@@ -64,7 +64,7 @@
 
 \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
-
+\linespread{1.2} 
 
 \begin{document}
 
@@ -105,7 +105,9 @@
     vlines,
   }
   \textbf{Version} & \textbf{Date} & \textbf{Author} & \textbf{Comment} \\
-   0.1v                & 04.06.23             & M. Raczkowski   & Overview,Design,Data processing, Conclusion         
+   0.1v                & 04.06.23             & M. Raczkowski   & Overview,Design,Data processing, Conclusion \\
+   0.2v    & 05.06.23 & M. Raczkowski, G. Malisz & Clean up and edit, Optimalisation
+
   \end{tblr}
 \end{table}
 
@@ -114,7 +116,7 @@
 
 
 \section{Overview}
-The Canvas Data Microservice collects data on student scores, submissions, and grades from the Canvas learning management system. It organizes and stores this data for analysis. The Analyze Microservice processes the collected data, extracting insights and trends using statistical analysis and machine learning techniques. These insights are then presented in a web application dashboard, providing users with a user-friendly interface to visualize and explore the data. The dashboard allows administrators, instructors, and students to make data-driven decisions to improve educational outcomes.
+The Canvas Data Microservice collects data on student scores, submissions, and grades from the Canvas learning management system. It organizes and stores this data for analysis. The Analyze Microservice processes the collected data. These insights are then presented in a web application dashboard, providing users with a user-friendly interface to visualize and explore the data. The dashboard allows administrators, instructors, and students to make data-driven decisions to improve educational outcomes.
 
 \section{Design}
 
@@ -139,6 +141,13 @@ The Canvas Data Microservice is designed following the principles of Domain-Driv
 
 \section{Data processing}
 The Canvas Data Microservice plays a vital role in preparing and shaping data and objects for further usage within the Analyze Microservice and other components of the software. It acts as a data gathering and transformation layer, retrieving information on student scores, submissions, and grades from the Canvas learning management system. The microservice then processes and organizes this data, ensuring it is in a suitable format for analysis. It may perform data normalization, filtering, and aggregation, as well as handle any necessary data conversions. By preparing the data and objects, the Canvas Data Microservice enables seamless integration with the Analyze Microservice, allowing for efficient analysis and generation of insights. Additionally, other parts of the software can leverage the preprocessed data and objects for various purposes, such as generating reports, generating personalized recommendations, or powering visualizations in the web application dashboard. This way, the Canvas Data Microservice acts as a foundational component, providing the necessary groundwork for data-driven decision-making and enhancing the overall functionality of the software.
+
+\section{Optimalisation}
+During the development of the Canvas Data Microservice, optimization became a crucial focus due to prolonged data retrieval times. Recognizing the need to enhance performance, several measures were undertaken. Firstly, to address the slow data retrieval, specific data objects were trimmed down in size, retaining only the essential attributes required for analysis. By reducing the data payload, the microservice was able to retrieve and process information more efficiently, resulting in improved response times. 
+
+Additionally, different API endpoints were devised to optimize data retrieval. This approach allowed for targeted requests, retrieving only the necessary data for analysis, further reducing latency and network overhead. Furthermore, to streamline the data retrieval process, REST API calls were modified to retrieve all the required data from a single Canvas API endpoint. This consolidation of data retrieval minimized the number of requests needed, significantly improving the overall efficiency of the microservice.
+
+These optimization efforts, including data size reduction, the use of targeted API endpoints, and consolidating REST API calls, greatly improved the performance of the Canvas Data Microservice. By enhancing the speed and efficiency of data retrieval, the microservice ensures faster access to critical data for analysis, correlation, and presentation within the student performance dashboard.
 
 
 \section{Conclusion}
